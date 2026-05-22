@@ -1,9 +1,9 @@
-use bevy::prelude::*;
-
-use crate::plugins::window;
-
 mod plugins;
+mod prelude;
+
+use plugins::window;
+use prelude::*;
 
 fn main() {
-    App::new().add_plugins((window::WindowHandling)).run();
+    App::new().add_plugins(window::WindowHandling).run();
 }
