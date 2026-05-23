@@ -7,10 +7,6 @@ authors = ["Nyunu", "Goo"]
 license = "GPL 3.0"
 repository = "https://github.com/NyunuBit/Chemestro"
 
-[package.metadata]
-window-title = "Chemestro"        # what will show at the window
-window-id = "com.nyunu.chemestro" # window id in wayland, and the rest is something similar
-
 [dependencies]
 bevy = { version = "0.18.1", features = ["dynamic_linking"] }
 
