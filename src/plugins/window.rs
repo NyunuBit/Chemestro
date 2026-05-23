@@ -6,7 +6,7 @@ impl Plugin for WindowHandling {
     fn build(&self, app: &mut App) {
         app.add_plugins(DefaultPlugins.set(WindowPlugin {
             primary_window: Some(Window {
-                title: "Chemestro".to_owned(),
+                title: format!("Chemestro - v{}", env!("CARGO_PKG_VERSION")).to_owned(),
                 name: Some("com.nyunu.chemestro".to_owned()),
                 window_theme: Some(WindowTheme::Dark),
                 ..Default::default()
