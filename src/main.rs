@@ -1,11 +1,11 @@
 mod plugins;
-mod prelude;
 
-use plugins::{game_state, window};
-use prelude::*;
+use bevy::prelude::*;
+use plugins::{entry, window};
 
 fn main() {
     App::new()
-        .add_plugins((window::WindowHandlingPlugin, game_state::GameStatePlugin))
+        .add_plugins(entry::BasePlugin)
+        .add_plugins((window::WindowHandlingPlugin))
         .run();
 }
