@@ -3,7 +3,7 @@ name = "chemestro"
 description = "An turn-based card game which consist of defeating your homies with chemical reactions!"
 version = "0.1.0"
 edition = "2024"
-authors = ["Nyunu", "Goo"]
+authors = ["Nyunu", "2bGoo"]
 license = "GPL 3.0"
 repository = "https://github.com/NyunuBit/Chemestro"
 
